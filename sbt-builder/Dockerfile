@@ -43,4 +43,4 @@ ONBUILD ARG SBT_REPO_USERNAME
 ONBUILD ARG SBT_REPO_PASSWORD
 ONBUILD RUN sbt update
 ONBUILD ADD ./src /src/src
-ONBUILD RUN sbt clean assembly && mkdir /app && cp target/App.jar /app
+ONBUILD RUN sbt clean assembly && mkdir /jar && cp target/App.jar /jar
